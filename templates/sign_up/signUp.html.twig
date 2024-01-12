@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block signup %}
+	{{ form_start(form) }}
+		<div class="form">
+			<div class="head">
+				<div>{{ form_row(form.name)}}</div>
+				<div>{{ form_row(form.email)}}</div>
+			</div>
+			{{ form_rest(form) }}
+		</div>
+	{{ form_end(form) }}
+{% endblock %}
